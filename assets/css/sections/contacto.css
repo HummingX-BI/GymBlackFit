@@ -22,6 +22,7 @@
 }
 
 .contacto__info-linea {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -37,12 +38,14 @@
   border-top: 1px solid var(--linea);
 }
 
-.contacto__info-linea:hover {
+.contacto__info-linea:hover,
+.contacto__info-linea:active {
   border-color: var(--tezontle);
   transform: translateX(8px);
 }
 
-.contacto__info-linea:hover span:last-child {
+.contacto__info-linea:hover span:last-child,
+.contacto__info-linea:active span:last-child {
   color: var(--tezontle-vivo);
 }
 
@@ -70,7 +73,8 @@
   .contacto__info-linea span:last-child {
     text-align: left;
   }
-  .contacto__info-linea:hover {
+  .contacto__info-linea:hover,
+  .contacto__info-linea:active {
     transform: translateX(4px);
   }
 }
@@ -95,6 +99,7 @@
 }
 
 .contacto__map {
+  display: block;
   width: 100%;
   height: 100%;
   border: none;
