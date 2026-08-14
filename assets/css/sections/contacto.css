@@ -1,0 +1,103 @@
+.contacto {
+  background-color: var(--carbon);
+  background-image: url('../../../img/texturas/t4.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.contacto__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+@media (max-width: 860px) {
+  .contacto__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacto__title {
+  margin: 18px 0 32px;
+}
+
+.contacto__info-linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--linea);
+  font-family: var(--datos);
+  font-size: var(--text-sm);
+  color: var(--cal);
+  transition: border-color var(--dur-media) var(--ease-suave), transform var(--dur-media) var(--ease-suave), color var(--dur-media) var(--ease-suave);
+}
+
+.contacto__info-linea:first-of-type {
+  border-top: 1px solid var(--linea);
+}
+
+.contacto__info-linea:hover {
+  border-color: var(--tezontle);
+  transform: translateX(8px);
+}
+
+.contacto__info-linea:hover span:last-child {
+  color: var(--tezontle-vivo);
+}
+
+.contacto__info-linea span:first-child {
+  color: var(--cal-tenue);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: var(--text-xs);
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.contacto__info-linea span:last-child {
+  text-align: right;
+  line-height: 1.4;
+  transition: color var(--dur-media) var(--ease-suave);
+}
+
+@media (max-width: 640px) {
+  .contacto__info-linea {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .contacto__info-linea span:last-child {
+    text-align: left;
+  }
+  .contacto__info-linea:hover {
+    transform: translateX(4px);
+  }
+}
+
+.contacto__btn {
+  margin-top: 32px;
+  display: inline-block;
+}
+
+.contacto__map-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--linea);
+  padding: 8px;
+  background-color: var(--carbon);
+  transition: border-color var(--dur-media) var(--ease-suave);
+}
+
+.contacto__map-wrap:hover {
+  border-color: var(--tezontle);
+}
+
+.contacto__map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(100%) invert(90%) contrast(1.2);
+}

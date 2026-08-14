@@ -1,0 +1,30 @@
+.amenidades {
+  background-color: var(--carbon);
+  color: var(--tezontle); /* Letras en dorado elegante */
+  padding: 80px 0;
+  border-top: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+}
+
+.amenidades__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--display);
+  font-size: var(--text-2xl);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.amenidades__item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.amenidades__item:not(:last-child)::after {
+  content: '·';
+  color: var(--cal-tenue);
+}

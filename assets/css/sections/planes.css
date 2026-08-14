@@ -1,0 +1,11 @@
+.planes {
+  background-color: var(--carbon);
+  background-image: url('../../../img/texturas/t2.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.planes .section-head {
+  max-width: 700px;
+}

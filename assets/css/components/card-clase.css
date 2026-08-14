@@ -1,0 +1,55 @@
+.clase-card {
+  flex: 0 0 90%;
+  max-width: 600px;
+  scroll-snap-align: start;
+  background: var(--carbon);
+  padding: 48px;
+  position: relative;
+  border: 1px solid var(--linea);
+}
+
+@media (min-width: 860px) {
+  .clase-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+.clase-card__num {
+  font-family: var(--datos);
+  font-size: var(--text-base);
+  color: var(--tezontle);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.clase-card h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: 16px;
+}
+
+.clase-card p {
+  color: var(--cal-tenue);
+  font-size: var(--text-base);
+  margin-bottom: 32px;
+}
+
+.clase-card__meta {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--linea);
+  padding-top: 24px;
+}
+
+.clase-card__meta div {
+  font-family: var(--datos);
+  font-size: var(--text-sm);
+  color: var(--cal);
+}
+
+.clase-card__meta span {
+  display: block;
+  color: var(--cal-tenue);
+  font-size: var(--text-xs);
+  margin-bottom: 8px;
+}

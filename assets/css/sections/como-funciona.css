@@ -1,0 +1,65 @@
+.como-funciona {
+  background-color: var(--negro);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Oscurecer la foto para legibilidad, sin texturas */
+.como-funciona::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 10, 9, 0.65);
+  z-index: 1;
+}
+
+.como-funciona .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.como-funciona__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+@media (min-width: 900px) {
+  .como-funciona__grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.como-funciona__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  counter-reset: steps;
+}
+
+.como-funciona__step {
+  position: relative;
+  padding-left: 48px;
+}
+
+.como-funciona__step::before {
+  counter-increment: steps;
+  content: "0" counter(steps);
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-family: var(--datos);
+  color: var(--tezontle);
+  font-size: var(--text-sm);
+}
+
+.como-funciona__step h3 {
+  margin-bottom: 12px;
+  font-size: var(--text-lg);
+}
+
+.como-funciona__step p {
+  color: var(--cal-tenue);
+  font-size: var(--text-base);
+}

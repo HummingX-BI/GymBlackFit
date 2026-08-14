@@ -1,0 +1,26 @@
+{
+  "negocio": {
+    "nombre": "Gym Black",
+    "ciudad": "San Martín de las Pirámides, Estado de México",
+    "direccion": "PENDIENTE_CONFIRMAR",
+    "whatsapp": "PENDIENTE_NUMERO",
+    "instagram": "https://www.instagram.com/gym_black_fit"
+  },
+  "horarios": [
+    { "dias": "Lunes a viernes", "abre": "06:00", "cierra": "22:00" },
+    { "dias": "Sábado",          "abre": "07:00", "cierra": "14:00" },
+    { "dias": "Domingo",         "abre": "07:00", "cierra": "14:00" }
+  ],
+  "planes_individuales": [
+    { "id": "mensual",   "nombre": "Mensual",           "precio": 500,  "periodo": "mes",     "equivalente_mensual": 500 },
+    { "id": "matutino",  "nombre": "Horario especial",  "precio": 430,  "periodo": "mes",     "equivalente_mensual": 430,
+      "restriccion": "Acceso de 12:00 a 16:00 h" },
+    { "id": "semestral", "nombre": "6 meses",           "precio": 2700, "periodo": "6 meses", "equivalente_mensual": 450 },
+    { "id": "anual",     "nombre": "12 meses",          "precio": 4999, "periodo": "12 meses","equivalente_mensual": 417 }
+  ],
+  "planes_familiares": [
+    { "personas": 3, "precio": 1380, "periodo": "mes", "por_persona": 460 },
+    { "personas": 4, "precio": 1800, "periodo": "mes", "por_persona": 450 },
+    { "personas": 5, "precio": 2150, "periodo": "mes", "por_persona": 430 }
+  ]
+}

@@ -1,0 +1,46 @@
+.footer {
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--linea);
+  background-color: var(--negro);
+  background-image: url('../../../img/texturas/t8.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.footer__grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__mark {
+  font-family: var(--display);
+  font-variation-settings: "wdth" 120, "wght" 800;
+  font-size: var(--text-lg);
+  color: var(--cal);
+}
+
+.footer__links {
+  display: flex;
+  gap: 32px;
+  font-family: var(--datos);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--cal-tenue);
+}
+
+.footer__links a:hover {
+  color: var(--tezontle);
+}
+
+.footer__note {
+  font-family: var(--datos);
+  font-size: var(--text-xs);
+  color: var(--cal-tenue);
+  opacity: 0.5;
+  margin-top: 32px;
+}

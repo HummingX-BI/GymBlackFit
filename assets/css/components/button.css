@@ -1,0 +1,44 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 30px;
+  font-family: var(--datos);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: var(--radio-btn);
+  cursor: pointer;
+  transition: all var(--dur-media) var(--ease-suave);
+  border: 1px solid transparent;
+}
+
+.btn-oro {
+  /* Using Tezontle for primary buttons in redesign */
+  background: var(--tezontle);
+  color: var(--cal);
+}
+
+.btn-oro:hover {
+  background: var(--tezontle-vivo);
+}
+
+.btn-linea {
+  border-color: var(--cal-tenue);
+  color: var(--cal);
+}
+
+.btn-linea:hover {
+  border-color: var(--cal);
+  background: rgba(230,225,214,0.05);
+}
+
+.btn--sm {
+  padding: 12px 22px;
+}
+
+.btn--w-full {
+  width: 100%;
+}

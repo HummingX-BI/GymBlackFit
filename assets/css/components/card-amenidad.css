@@ -1,0 +1,54 @@
+.amenity-card {
+  flex: 0 0 85%;
+  max-width: 400px;
+  scroll-snap-align: start;
+  background: var(--carbon);
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--linea);
+}
+
+@media (min-width: 768px) {
+  .amenity-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .amenity-card {
+    flex: 0 0 calc(33.333% - 16px);
+  }
+}
+
+.amenity-card__num {
+  font-family: var(--datos);
+  font-size: var(--text-base);
+  color: var(--tezontle);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.amenity-card__img-wrap {
+  aspect-ratio: 4/3;
+  width: 100%;
+  margin-bottom: 24px;
+  background: var(--negro);
+}
+
+.amenity-card__img-wrap img,
+.amenity-card__img-wrap picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amenity-card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: 12px;
+}
+
+.amenity-card p {
+  color: var(--cal-tenue);
+  font-size: var(--text-base);
+}

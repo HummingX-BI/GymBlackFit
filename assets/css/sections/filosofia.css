@@ -1,0 +1,93 @@
+.filosofia {
+  background: var(--piedra);
+}
+
+.filosofia__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .filosofia__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filosofia__title {
+  margin: 18px 0 26px;
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.filosofia__title em {
+  font-style: italic;
+  color: var(--oro);
+}
+
+.filosofia p {
+  color: var(--hueso-tenue);
+  font-size: 17px;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.filosofia__btn {
+  margin-top: 10px;
+}
+
+.media-frame {
+  position: relative;
+  aspect-ratio: 4/5;
+  border: 1px solid var(--linea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    repeating-linear-gradient(135deg, rgba(201,162,39,0.05) 0 2px, transparent 2px 26px),
+    var(--obsidiana);
+}
+
+.media-frame::before,
+.media-frame::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--oro);
+}
+
+.media-frame::before {
+  top: -1px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.media-frame::after {
+  bottom: -1px;
+  right: -1px;
+  border-left: none;
+  border-top: none;
+}
+
+.media-frame__txt {
+  text-align: center;
+  padding: 20px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hueso-tenue);
+}
+
+.media-frame__txt b {
+  display: block;
+  font-family: var(--display);
+  font-size: 22px;
+  color: var(--oro);
+  text-transform: none;
+  font-style: italic;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+}

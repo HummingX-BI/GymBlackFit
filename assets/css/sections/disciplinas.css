@@ -1,0 +1,21 @@
+.disciplinas {
+  background-color: var(--carbon);
+  background-image: url('../../../img/texturas/t3.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.disciplinas__carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding-bottom: 24px;
+  scrollbar-width: none; 
+}
+
+.disciplinas__carousel::-webkit-scrollbar {
+  display: none;
+}
