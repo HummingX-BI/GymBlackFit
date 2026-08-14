@@ -9,9 +9,8 @@
 
 .footer__grid {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 

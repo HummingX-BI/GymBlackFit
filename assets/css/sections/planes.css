@@ -1,8 +1,5 @@
 .planes {
-  background-color: var(--carbon);
-  background-image: linear-gradient(rgba(21, 20, 15, 0.85), rgba(21, 20, 15, 0.85)), url('../../../img/texturas/t3.webp');
-  background-size: cover;
-  background-position: center;
+  background-color: var(--negro);
 }
 
 .planes .section-head {
