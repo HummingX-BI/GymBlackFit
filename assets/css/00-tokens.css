@@ -26,7 +26,7 @@
   --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.35rem);      /* 18px -> 21px */
   --text-xl: clamp(1.35rem, 1.15rem + 1vw, 1.75rem);      /* 21px -> 28px */
   --text-2xl: clamp(1.75rem, 1.4rem + 1.7vw, 2.5rem);     /* 28px -> 40px */
-  --text-3xl: clamp(2rem, 1.6rem + 3vw, 3.5rem);          /* 32px -> 56px */
+  --text-3xl: clamp(1.75rem, 1.6rem + 3vw, 3.5rem);          /* 28px -> 56px */
   --text-4xl: clamp(3rem, 1.8rem + 5vw, 5.5rem);          /* 48px -> 88px */
 
   /* Variables generales */
@@ -37,6 +37,14 @@
   --ease-suave: cubic-bezier(0.4, 0, 0.2, 1);
   --ancho-max: 1200px;
   --padding-lateral: 24px;
+  --hero-veil-max: 0.88;
   --z-nav: 100;
   --z-wa: 90;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --padding-lateral: 24px;
+    --hero-veil-max: 0.93;
+  }
 }

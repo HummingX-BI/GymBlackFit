@@ -1,10 +1,17 @@
 .nav {
-  position: absolute; /* Changed from fixed to flow with the layout better, or keep fixed if we want sticky. Let's keep absolute for a clean top */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: var(--z-nav);
   padding: 24px 0;
+  transition: background-color var(--dur-media) var(--ease-suave), border-color var(--dur-media) var(--ease-suave);
+  border-bottom: 1px solid transparent;
+}
+
+.nav.is-scrolled {
+  background-color: var(--carbon);
+  border-bottom-color: var(--linea);
 }
 
 .nav__wrap {

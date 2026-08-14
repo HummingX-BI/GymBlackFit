@@ -15,8 +15,6 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
   color: var(--cal);
   line-height: 0.88;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 h1 { font-size: var(--text-4xl); }
