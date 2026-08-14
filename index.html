@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
 <meta charset="UTF-8">
@@ -51,9 +51,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@120,500;120,800&family=Archivo+Narrow:wght@500&family=Karla:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/components/preloader.css">
 <script type="module" src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="loading">
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader__logo">Gym Black</div>
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      preloader.classList.add('preloader-hidden');
+      document.body.classList.remove('loading');
+      setTimeout(() => preloader.remove(), 600);
+    });
+  </script>
 
 <nav class="nav">
   <div class="wrap nav__wrap">

@@ -1,0 +1,51 @@
+#preloader {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--negro);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--dur-lenta) var(--ease-suave), visibility var(--dur-lenta) var(--ease-suave);
+}
+
+.preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader__logo {
+  font-family: var(--display);
+  font-variation-settings: "wdth" 120, "wght" 900;
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-transform: uppercase;
+  color: var(--carbon);
+  -webkit-text-stroke: 1px var(--tezontle);
+  position: relative;
+  letter-spacing: -0.02em;
+}
+
+.preloader__logo::before {
+  content: "GYM BLACK";
+  position: absolute;
+  inset: 0;
+  color: var(--tezontle);
+  -webkit-text-stroke: 0;
+  width: 0;
+  overflow: hidden;
+  animation: fillText 2s cubic-bezier(0.8, 0, 0.2, 1) infinite alternate;
+  white-space: nowrap;
+}
+
+@keyframes fillText {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Prevent scrolling while loading */
+body.loading {
+  overflow: hidden !important;
+}

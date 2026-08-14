@@ -21,7 +21,8 @@
   color: var(--cal);
 }
 
-.btn-oro:hover {
+.btn-oro:hover,
+.btn-oro:active {
   background: var(--tezontle-vivo);
 }
 
@@ -30,7 +31,8 @@
   color: var(--cal);
 }
 
-.btn-linea:hover {
+.btn-linea:hover,
+.btn-linea:active {
   border-color: var(--cal);
   background: rgba(230,225,214,0.05);
 }
