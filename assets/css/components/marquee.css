@@ -2,10 +2,9 @@
   width: 100%;
   overflow: hidden;
   background-color: var(--tezontle);
-  background-image: url('../../../img/texturas/t7.webp');
+  background-image: linear-gradient(rgba(159, 122, 52, 0.9), rgba(159, 122, 52, 0.9)), url('../../../img/texturas/t7.webp');
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
   color: var(--cal);
   padding: 16px 0;
   display: flex;
@@ -18,7 +17,10 @@
 
 .marquee__inner {
   display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
   gap: 2rem;
+  padding-right: 2rem; /* El mismo tamaño del gap para que empate perfecto */
   animation: marquee 20s linear infinite;
 }
 
@@ -34,7 +36,7 @@
 
 @keyframes marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Assuming content is doubled */
+  100% { transform: translateX(-100%); } /* Animación completa del 100% del contenedor */
 }
 
 .marquee span {
