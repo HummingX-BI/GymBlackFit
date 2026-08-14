@@ -19,6 +19,7 @@
 
 .contacto__title {
   margin: 18px 0 32px;
+  font-size: calc(var(--text-3xl) - 2px);
 }
 
 .contacto__info-linea {
@@ -87,11 +88,13 @@
 .contacto__map-wrap {
   position: relative;
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 1/1;
   border: 1px solid var(--linea);
   padding: 8px;
   background-color: var(--carbon);
   transition: border-color var(--dur-media) var(--ease-suave);
+  overflow: hidden;
 }
 
 .contacto__map-wrap:hover {

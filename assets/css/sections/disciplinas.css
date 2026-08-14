@@ -5,6 +5,10 @@
   background-position: center;
 }
 
+.disciplinas h2 {
+  font-size: calc(var(--text-3xl) - 4px);
+}
+
 .disciplinas__carousel {
   display: flex;
   overflow-x: auto;
