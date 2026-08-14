@@ -3,7 +3,9 @@ export async function initWhatsapp() {
   if (waLinks.length === 0) return;
 
   try {
-    const response = await fetch('data/contenido.json');
+    // Bust cache dynamically to avoid fetching the old JSON version containing PENDIENTE_NUMERO
+    const cacheBuster = new Date().getTime();
+    const response = await fetch('data/contenido.json?v=' + cacheBuster);
     if (!response.ok) throw new Error('Network response was not ok');
     const data = await response.json();
     
