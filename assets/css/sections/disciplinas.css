@@ -1,6 +1,6 @@
 .disciplinas {
   background-color: var(--carbon);
-  background-image: url('../../../img/texturas/t3.png');
+  background-image: url('../../../img/texturas/t3.webp');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -14,6 +14,11 @@
   gap: 16px;
   padding-bottom: 24px;
   scrollbar-width: none; 
+  /* Hacer que el scroll llegue hasta los bordes en móvil */
+  margin-left: calc(var(--padding-lateral) * -1);
+  margin-right: calc(var(--padding-lateral) * -1);
+  padding-left: var(--padding-lateral);
+  padding-right: var(--padding-lateral);
 }
 
 .disciplinas__carousel::-webkit-scrollbar {

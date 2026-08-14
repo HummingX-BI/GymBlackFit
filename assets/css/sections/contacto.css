@@ -1,6 +1,6 @@
 .contacto {
   background-color: var(--carbon);
-  background-image: url('../../../img/texturas/t4.png');
+  background-image: url('../../../img/texturas/t4.webp');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -99,5 +99,4 @@
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(100%) invert(90%) contrast(1.2);
 }
